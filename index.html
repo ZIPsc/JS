@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Javascript 공부중...</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <ol start=5>
+    <li>A</li>
+    <li>B</li>
+  </ol>
+  <a align="center"><h1><font size="10"color="Red">비밀번호 입력</font></h1></a>
+  <table border=1>
+  <td> <input type="button" value="a" onclick="a()" class="but"> </td>
+  <td> <input type="button" value="b" onclick="b()" class="but"> </td>
+  <td> <input type="button" value="c" onclick="c()" class="but"> </td>
+  <tr><td> <input type="button" value="d" onclick="d()" class="but"> </td>
+  <td> <input type="button" value="e" onclick="e()"> </td>
+  <td> <input type="button" value="f" onclick="f()"> </td></tr>
+</table>
+<input type="button" value="Enter" onclick="enter()">
+
+  <script type="text/javascript">
+  var eng="";
+  function a() {
+    eng = eng+'a';
+  }
+  function b() {
+    eng = eng+'b';
+  }
+  function c() {
+    eng = eng+'c';
+  }
+  function d() {
+    eng = eng+'d';
+  }
+  function e() {
+    eng = eng+'e';
+  }
+  function f() {
+    eng = eng+'f';
+  }
+  function enter() {
+    if(eng=="af"){
+      document.write("빙고!");
+    }
+    else{
+      alert("틀림\n입력한 값 : "+eng);
+    }
+
+  }
+  </script>
+</body>
+</html>
